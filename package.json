@@ -8,7 +8,8 @@
     "png": "magick assets/flowers.jpg -quality 80 assets/flowers.png",
     "jpg": "magick assets/flowers.jpg -quality 80 assets/flowers.jpeg",
     "avif:640": "magick assets/flowers.avif -resize 640x360! -quality 80 assets/flowers-640.avif",
-    "avif:with-aspect-ration": "magick assets/flowers.jpg -resize 640x360 -quality 80 assets/flowers-aspect.avif"
+    "avif:with-aspect-ration": "magick assets/flowers.jpg -resize 640x360 -quality 80 assets/flowers-aspect.avif",
+    "upscale": "magick assets/flowers-aspect.avif -resize 3000x -quality 80 -filter Lanczos upscale/flowers-upscale.avif"
   },
   "keywords": [],
   "author": "",
