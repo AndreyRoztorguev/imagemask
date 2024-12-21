@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Assets images</h2>
+    <img src="../assets/flowers.jpg" alt="" />
+    <img src="../assets/flowers.jpeg" alt="" />
+    <img src="../assets/flowers.webp" alt="" />
+    <img src="../assets/flowers.avif" alt="" />
+    <img src="../assets/flowers-640.avif" alt="" />
+    <img src="../assets/flowers.png" alt="" />
+    <h2>resized_images</h2>
+    <img src="../resized_images/flowers_640x360.avif" alt="" />
+    <img src="../resized_images/flowers_1280x720.avif" alt="" />
+    <img src="../resized_images/flowers_1920x1080.avif" alt="" />
+    <h2>Responsive</h2>
+    <picture>
+      <source
+        srcset="../resized_images/flowers_1920x1080.avif"
+        type="image/avif"
+        media="(min-width: 1280px)" />
+      <source
+        srcset="../resized_images/flowers_1280x720.avif"
+        type="image/webp"
+        media="(min-width: 640px)" />
+      <img src="../resized_images/flowers_640x360.avif" alt="Responsive Image" />
+    </picture>
+    <h2>Force Exact Dimensions (Aspect Ratio May Be Distorted)</h2>
+    <img src="../assets/flowers-640.avif" alt="" />
+    <h2>From jpg to avif -resize 640x360 -quality 80 respect aspect ration</h2>
+    <img src="../assets/flowers-aspect.avif" alt="" />
+  </body>
+</html>

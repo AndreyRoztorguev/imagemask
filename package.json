@@ -1,0 +1,17 @@
+{
+  "name": "imagemagick",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "webp": "magick assets/flowers.jpg -quality 80 assets/flowers.webp",
+    "avif": "magick assets/flowers.jpg -quality 80 assets/flowers.avif",
+    "png": "magick assets/flowers.jpg -quality 80 assets/flowers.png",
+    "jpg": "magick assets/flowers.jpg -quality 80 assets/flowers.jpeg",
+    "avif:640": "magick assets/flowers.avif -resize 640x360! -quality 80 assets/flowers-640.avif",
+    "avif:with-aspect-ration": "magick assets/flowers.jpg -resize 640x360 -quality 80 assets/flowers-aspect.avif"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
